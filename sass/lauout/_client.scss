@@ -1,0 +1,50 @@
+.client {
+  --item: 1;
+  --indent: 30px;
+
+  @media screen and (min-width: 480px) {
+    --item: 2;
+    --indent: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    --item: 3;
+    --indent: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    --item: 6;
+    --indent: 30px;
+  }
+}
+
+.client__item {
+  fill: #afb1b8;
+}
+
+.client__link {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  // padding: 15px 30px;
+  padding: 14px 50px;
+  @include flex-center;
+  color: #afb1b8;
+
+  transition-property: color, border;
+  @include anim;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+  @media screen and (min-width: 768px) {
+    padding: 14px 58px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 14px 30px;
+  }
+}
+
+.client__lcon {
+  fill: currentColor;
+}

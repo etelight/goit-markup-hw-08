@@ -1,0 +1,23 @@
+.maine-logo {
+  // margin-right: 93px;
+  display: block;
+
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--logo-constant-color);
+
+  &__header-variable {
+    color: var(--logo-header-variable-color);
+  }
+
+  &__footer-variable {
+    color: var(--logo-footer-variable-color);
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
